@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-4">
+      <div class="card mt-5">
+        <div class="card-header">
+          <h3 class="card-title text-center">Noticia</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <input type="text" name="name" [(ngModel)]="notice.name" placeholder="Título" class="form-control" autofocus required>
+            </div>
+            <div class="form-group">
+              <textarea name="description" [(ngModel)]="notice.description" placeholder="Descripción" rows="2" class="form-control" required></textarea>
+            </div>
+            <button class="btn btn-success btn-block" (click)="saveNotice()">
+              Guardar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

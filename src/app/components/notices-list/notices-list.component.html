@@ -1,0 +1,31 @@
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-6">
+      <h1>Últimas Noticias</h1>
+    </div>
+    <div class="col-6">
+      <a [routerLink]="['/notices/add/']" type="button" class="btn btn-primary mt-2">
+        Agregar Noticia
+      </a>
+    </div>
+    <div class="col-12">
+      <table class="table table-hover table-bordered table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let noticia of noticias; let item=index">
+            <th scope="row">{{item+1}}</th>
+            <td>{{noticia.name}}</td>
+            <td>{{noticia.description}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
