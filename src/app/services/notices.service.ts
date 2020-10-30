@@ -7,7 +7,7 @@ import { Notice } from '../models/notice';
 })
 export class NoticesService {
 
-  _url = 'http://localhost:3000/'
+  _url = 'https://localhost:44310/api/noticias'
   private httpHeaders  = new HttpHeaders ({'Content-Type':'application/json'})
 
   constructor(

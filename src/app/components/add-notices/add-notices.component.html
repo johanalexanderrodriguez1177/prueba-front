@@ -8,10 +8,10 @@
         <div class="card-body">
           <form>
             <div class="form-group">
-              <input type="text" name="name" [(ngModel)]="notice.name" placeholder="Título" class="form-control" autofocus required>
+              <input type="text" name="name" [(ngModel)]="notice.Name" placeholder="Título" class="form-control" autofocus required>
             </div>
             <div class="form-group">
-              <textarea name="description" [(ngModel)]="notice.description" placeholder="Descripción" rows="2" class="form-control" required></textarea>
+              <textarea name="description" [(ngModel)]="notice.Description" placeholder="Descripción" rows="2" class="form-control" required></textarea>
             </div>
             <button class="btn btn-success btn-block" (click)="saveNotice()">
               Guardar

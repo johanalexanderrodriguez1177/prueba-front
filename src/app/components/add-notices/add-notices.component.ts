@@ -13,9 +13,9 @@ export class AddNoticesComponent implements OnInit {
   @HostBinding('class') classes = 'row';
 
   notice: Notice = {
-    id: 0,
-    name: '',
-    description: ''
+    Id: 0,
+    Name: '',
+    Description: ''
   };
 
   constructor(
@@ -27,7 +27,7 @@ export class AddNoticesComponent implements OnInit {
   }
 
   saveNotice() {
-    delete this.notice.id;
+    delete this.notice.Id;
     this.noticesService.addNotice(this.notice)
       .subscribe(
         res => {
